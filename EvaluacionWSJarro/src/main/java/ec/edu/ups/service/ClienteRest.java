@@ -3,22 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.ups.modelo;
-
-import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+package ec.edu.ups.service;
 
 /**
  *
  * @author Starman
  */
-@Entity
-public class Cliente implements Serializable {
+public class ClienteRest {
 
-    //private static final long serialVersionUID = 1L;
-
-    @Id
     private String cedula;
     private String nombre;
     private String correo;
@@ -51,5 +43,4 @@ public class Cliente implements Serializable {
     public String toString() {
         return "Cliente{" + "cedula=" + cedula + ", nombre=" + nombre + ", correo=" + correo + '}';
     }
-
 }

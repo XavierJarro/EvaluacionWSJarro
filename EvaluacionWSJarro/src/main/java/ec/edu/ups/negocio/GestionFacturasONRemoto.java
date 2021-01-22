@@ -7,22 +7,16 @@ package ec.edu.ups.negocio;
 
 import ec.edu.ups.modelo.Cliente;
 import ec.edu.ups.modelo.Producto;
-import ec.edu.ups.service.Respuesta;
-import javax.ejb.Local;
+import javax.ejb.Remote;
 
 /**
  *
  * @author Starman
  */
-@Local
-public interface GestionFacturasONLocal {
+@Remote
+public interface GestionFacturasONRemoto {
 
     public boolean registrarCliente(Cliente cliente);
-
     public boolean registrarProducto(Producto producto);
-
-    public Respuesta anadirProducto(int codigo, int cantidad);
-
-    public Respuesta anadirCliente(String cedula, String nombre, String correo);
 
 }

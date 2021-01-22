@@ -6,17 +6,13 @@
 package ec.edu.ups.modelo;
 
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
 /**
  *
  * @author Starman
  */
-@Entity
 public class Producto implements Serializable {
 
-    @Id
     private int codigo;
     private String descripcion;
     private double precio;
@@ -56,9 +52,7 @@ public class Producto implements Serializable {
 
     @Override
     public String toString() {
-        return "Producto{" + "codigo=" + codigo + ", descripcion=" + descripcion + ", precio=" + precio + ", cantidad=" + cantidad + '}';
+        return "Producto{" + "codigo=" + codigo + ", descripcion=" + descripcion + ", precio=" + precio + '}';
     }
-
-    
 
 }

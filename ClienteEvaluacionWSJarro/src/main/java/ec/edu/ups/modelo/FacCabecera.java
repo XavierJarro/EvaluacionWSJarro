@@ -8,25 +8,18 @@ package ec.edu.ups.modelo;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 
 /**
  *
  * @author Starman
  */
-@Entity
-public class FacCabecera implements Serializable {
+public class FacCabecera implements Serializable{
 
-    @Id
+   
     private int codigoFac;
     private Date fecha;
     private double total;
-    @OneToOne
     private Cliente cliente;
-    @OneToMany
     private List<FacDetalle> facDetalle;
 
     public int getCodigoFac() {

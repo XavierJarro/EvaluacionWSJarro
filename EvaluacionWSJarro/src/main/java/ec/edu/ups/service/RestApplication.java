@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.ups.vista;
+package ec.edu.ups.service;
+
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
 
 /**
  *
  * @author Starman
  */
-public class ClienteBean {
-    
+@ApplicationPath("/rs")
+public class RestApplication extends Application {
+
 }

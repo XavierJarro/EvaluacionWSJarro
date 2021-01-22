@@ -7,17 +7,13 @@ package ec.edu.ups.modelo;
 
 import java.io.Serializable;
 import java.util.List;
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
 /**
  *
  * @author Starman
  */
-@Entity
 public class FacDetalle implements Serializable {
 
-    @Id
     private int numeroDetalle;
     private Producto producto;
     private double subtotal;

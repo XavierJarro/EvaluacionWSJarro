@@ -36,7 +36,7 @@ public class ClienteDao {
         return true;
     }
 
-    public Cliente readJPA(int id) {
+    public Cliente readJPA(String id) {
         Cliente cliente = em.find(Cliente.class, id);
         return cliente;
     }

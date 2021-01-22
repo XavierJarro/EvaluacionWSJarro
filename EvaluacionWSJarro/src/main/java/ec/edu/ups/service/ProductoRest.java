@@ -3,20 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.ups.modelo;
-
-import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+package ec.edu.ups.service;
 
 /**
  *
  * @author Starman
  */
-@Entity
-public class Producto implements Serializable {
+public class ProductoRest {
 
-    @Id
     private int codigo;
     private String descripcion;
     private double precio;
@@ -53,12 +47,11 @@ public class Producto implements Serializable {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
-
+    
+    
     @Override
     public String toString() {
-        return "Producto{" + "codigo=" + codigo + ", descripcion=" + descripcion + ", precio=" + precio + ", cantidad=" + cantidad + '}';
+        return "Producto{" + "codigo=" + codigo + ", descripcion=" + descripcion + ", precio=" + precio + '}';
     }
-
-    
 
 }
